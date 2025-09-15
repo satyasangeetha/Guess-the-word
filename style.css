@@ -1,0 +1,94 @@
+/* style.css (fixed) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #046cb1, #d0c4fa);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-container {
+  text-align: center;
+  background: rgba(255,255,255,0.15);
+  -webkit-backdrop-filter: blur(12px); /* Safari */
+  backdrop-filter: blur(12px);         /* Correct property */
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#hint {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#word {
+  font-size: 2em;
+  letter-spacing: 12px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+#keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+button.letter {
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #ffffffcc;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button.letter:hover {
+  transform: scale(1.1);
+  background: #ffeb3b;
+}
+
+button.letter:disabled {
+  background: #bbb;
+  color: #666;
+  cursor: not-allowed;
+}
+
+#message {
+  font-size: 1.4em;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#restart {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.2s;
+}
+
+#restart:hover {
+  transform: scale(1.05);
+}
